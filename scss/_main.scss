@@ -1,0 +1,66 @@
+body {
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 2.125rem;
+  margin-top: 1.5rem;
+}
+
+h2 {
+  background-color: cyan;
+  position: sticky;
+  top: 0;
+  margin: 1.5rem 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  & > * {
+    max-width: 100%;
+  }
+}
+
+.fruit-hover {
+  p {
+    margin-bottom: 0.65rem;
+  }
+  figure {
+    position: relative;
+    max-width: 500px;
+    &:hover figcaption,
+    &:focus figcaption,
+    &:active figcaption {
+      display: block;
+    }
+    img {
+      max-width: 100%;
+    }
+    figcaption {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: red;
+      color: #fff;
+    }
+  }
+}
+
+.back-to-top-btn {
+  padding: 1rem;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  a {
+    color: #fff;
+  }
+}

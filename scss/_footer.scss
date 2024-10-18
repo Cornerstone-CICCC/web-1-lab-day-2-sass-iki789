@@ -1,0 +1,14 @@
+footer {
+  border-bottom: 1.5rem solid #000;
+  @media screen and (min-width: 768px) {
+    border-bottom-width: 2rem;
+  }
+  @media screen and (min-width: 992px) {
+    border-bottom-width: 3rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
